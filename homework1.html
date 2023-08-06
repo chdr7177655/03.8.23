@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homework1</title>
+<style>
+
+
+
+
+</style>
+
+
+
+</head>
+<body>
+   <script>
+var length = parseInt(prompt("Enter rectangle length", 0));
+var width = parseInt(prompt("Enter rectangle width:", 0));
+
+while (length <= 0 || width <= 0) {
+  length = parseInt(prompt("Enter rectangle length:", 0));
+  width = parseInt(prompt("Enter rectangle width:", 0));
+}
+
+var rectangleDiv = document.createElement("div");
+rectangleDiv.style.width= width + "px";
+rectangleDiv.style.height= length + "px";
+rectangleDiv.style.border= "1px solid black ";
+
+
+document.body.appendChild(rectangleDiv)
+</script>
+
+
+
+
+</body>
+</html>
